@@ -15,3 +15,23 @@ def binary_to_decimal(b):
 bnum = 101010
 
 print(binary_to_decimal(bnum))
+
+
+# binary to decimal changer function 
+
+def decimal_to_binary(n):
+    binary = [0] * n 
+    i = 0
+     
+    while (n>0):
+        binary[1] = n % 2
+        n = int(n/2)
+        i += 1
+    for x in range (i-1,-1,-1):
+        print(binary[x], end="")
+        
+x = int(input("Please enter your decimal number:"))
+decimal_to_binary(x)
+
+
+
