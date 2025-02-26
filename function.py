@@ -24,7 +24,7 @@ def decimal_to_binary(n):
     i = 0
      
     while (n>0):
-        binary[1] = n % 2
+        binary[i] = n % 2
         n = int(n/2)
         i += 1
     for x in range (i-1,-1,-1):
